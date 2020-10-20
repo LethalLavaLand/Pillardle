@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Pillardle</title>
+    <title>Pillardle</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
     <script src="TemplateData/UnityProgress.js"></script>
@@ -12,15 +12,29 @@
     <script>
       var unityInstance = UnityLoader.instantiate("unityContainer", "Build/PillardleDevC.json", {onProgress: UnityProgress});
     </script>
+    <style>
+	body {
+ 		background-image: url("http://raw.githubusercontent.com/LethalLavaLand/PillardleTest/main/TemplateData/RealPageBackground.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-color: #000000;
+		height: 100%;
+	}
+    </style>
   </head>
   <body>
+	<div class="backy"></div>
+	<div class="header"><div class="toptitle"></div>
     <div class="webgl-content">
-      <div id="unityContainer" style="width: 1280px; height: 640px"></div>
+      <div id="unityContainer" style="width: 1200px; height: 600px"></div>
       <div class="footer">
-        <div class="webgl-logo"></div>
+        <!--<div class="webgl-logo"></div>-->	
+	      <div class="info" style="color:White;">cool space background unrelated to game</div>
+	      <div class="something">hello</div>
         <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
-        <div class="title">Pillardle</div>
+        <!--<div class="title">Pillardle</div>-->
       </div>
     </div>
+		</div>
   </body>
 </html>
